@@ -22,5 +22,6 @@ class Simulator():
         self.pug = pug
 
     def update(self):
-        ROLL, PITCH, YAW = self.pug
+        roll, pitch, yaw = self.pug.state.roll, self.pug.state.pitch, self.pug.state.yaw
         Lp = self.pug.state.foot_locations
+        (x, y, z) = (0, 0, 0)
